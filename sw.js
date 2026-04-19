@@ -24,6 +24,10 @@ self.addEventListener('activate', e => {
 });
 
 self.addEventListener('fetch', e => {
+  // Skip non-GET requests and external API calls
+  if (e.request.method !== 'GET' || e.request.url.includes('api.anthropic.com')) {
+    return;
+  }
   e.respondWith(
     caches.match(e.request).then(r => r || fetch(e.request))
   );
