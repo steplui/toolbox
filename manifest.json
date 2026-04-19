@@ -1,0 +1,14 @@
+{
+  "name": "Toolbox 小工具集合",
+  "short_name": "Toolbox",
+  "description": "13 個日常小工具 Dashboard",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f0f9f0",
+  "theme_color": "#e8f5e9",
+  "orientation": "portrait",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
